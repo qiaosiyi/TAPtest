@@ -17,18 +17,11 @@ int main(){
 		sum += c - '0';
 	}
 //	cout << sum << endl;
-	while(sum > 0){
-		temp = (sum % 10);
-		sum = sum - temp;
-		sum = sum /10;
-		out = out + temp;
-	}	
-	cout << out <<endl;
-	if(!out) py.push_back(num[0]);
-	while(out){
-		py.push_back(num[out % 10]);
-		cout << "add" << num[out % 10]<< endl;
-		out /= 10;
+	if(!sum) py.push_back(num[0]);
+	while(sum){
+		py.push_back(num[sum % 10]);
+//		cout << "add" << num[sum % 10]<< endl;
+		sum /= 10;
 	}
 	cout << py[py.size() -1];
 	for(int i = py.size() -2;i >= 0; i-- )
