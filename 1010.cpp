@@ -24,7 +24,7 @@ int main(){
 		if(n[i + 1] != 0){
 			cout << " " << n[i] * n[i + 1] << " " << n[i + 1] - 1;
 		}else{
-			cout << " " << 0 << " " << 0;
+			//cout << " " << 0 << " " << 0;
 		}
 	}
 	cout << endl;
