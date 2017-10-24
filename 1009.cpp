@@ -11,14 +11,11 @@ int main(){
 	vector<string> n;
 	string str = "";
 	int i = 0;
-
-	while (str != "\n"){
+	
+	do{
 		cin >> str;
-		if (str == "\n") break;
 		n.push_back(str);
-		cout << "add:" << str << endl;
-	}
-	cout << "add done." << endl;
+	}while(cin.get() != '\n');
 	cout << n[n.size() - 1];
 	for(i = n.size() -2; i >= 0; i--){
 		cout << " " << n[i];
